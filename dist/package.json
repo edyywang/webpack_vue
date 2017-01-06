@@ -1,0 +1,10 @@
+{
+ "name": "edyywang",
+ "version": "1.0.0",
+ "description": "edyywang testing webpack vue",
+ "author": "edyywang",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
