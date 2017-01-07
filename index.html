@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>webpack_vue</title>
+    <!-- 在index統一引入必要的js, 因此是在html這一層去引入外部的js -->
+    <!-- 或是在vue component中使用 require('some/javascript/file.js') 的方式引入 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
   <body>
-    <h1>Try Webpack Vue</h1>
+    <h1>header: Try Webpack Vue</h1>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
   </body>
