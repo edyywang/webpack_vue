@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <!-- 這是實際上的首頁內容, 套版的內容, 所以需要小心共用的header與footer是否必要 -->
-    <!-- 在這邊設置共用且必要的header footer nav -->
+    <!-- 在這邊設置共用且必要的header footer nav 這一頁面不該放任和內容-->
+    <h2>header: from App vue</h2>
     <!-- router-link to a link or data bind for render other component -->
     <router-link to="/">Home</router-link>
     <!-- could send parameter in route -->
@@ -25,24 +26,13 @@
       <!-- to show the component inside this slot -->
     </div>
     <hr>
-    <!-- 方法二: 引用custom component -->
-    <h3>footer: import Vue components</h3>
-    <div>
-      <message>Hello There</message>
-      <message>Hello There Again</message>
-      <counter></counter>
-    </div>
+    <h2>footer: import Vue components</h2>
   </div>
 </template>
 
 <script>
-// 需要import後註冊
-import Message from './components/Message.vue';
-import Counter from './components/Counter.vue';
-
 export default {
   name: 'app',
-  components: { Message, Counter }, // 需要註冊components
   data() {
     return {
     }
