@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- 這是實際上的首頁內容, 套版的內容, 所以需要小心共用的header與footer是否必要 -->
+    <!-- 在這邊設置共用且必要的header footer nav -->
     <!-- router-link to a link or data bind for render other component -->
     <router-link to="/">Home</router-link>
     <!-- could send parameter in route -->
